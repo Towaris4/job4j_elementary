@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class CounterTest {
 
     @Test
-    void When0And5Then15() {
+    void when0And5then15() {
         int start = 0;
         int finish = 5;
         int result = Counter.sum(start, finish);
@@ -15,7 +15,7 @@ class CounterTest {
     }
 
     @Test
-    void WhenMinus3And0Then15() {
+    void whenMinus3And0then15() {
         int start = -3;
         int finish = 0;
         int result = Counter.sum(start, finish);
@@ -24,7 +24,7 @@ class CounterTest {
     }
 
     @Test
-    void When5And0Then15() {
+    void when5And0then15() {
         int start = 5;
         int finish = 0;
         int result = Counter.sum(start, finish);
