@@ -29,10 +29,10 @@ public class SwitchWeek {
                 name = "Ошибка";
                 break;
         }
-            return name;
-        }
+        return name;
+    }
 
     public static void main(String[] args) {
-            System.out.println(nameOfDay(1));
-        }
+        System.out.println(nameOfDay(1));
+    }
 }
