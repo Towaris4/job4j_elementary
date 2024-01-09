@@ -1,6 +1,7 @@
 package ru.job4j.condition;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MaxTest {
@@ -60,4 +61,25 @@ class MaxTest {
         assertThat(result).isEqualTo(expected);
     }
 
+    @Test
+    void whenMax3And6And0And7Then7() {
+        int left = 3;
+        int right = 6;
+        int midle = 0;
+        int four = 7;
+        int result = Max.max(left, right, midle, four);
+        int expected = 7;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax3And20And0And0Then20() {
+        int left = 3;
+        int right = 20;
+        int midle = 0;
+        int four = 0;
+        int result = Max.max(left, right, midle, four);
+        int expected = 20;
+        assertThat(result).isEqualTo(expected);
+    }
 }
